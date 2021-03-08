@@ -1,0 +1,6 @@
+# action.yml
+name: 'gtk-apps-testing-docker-action'
+description: 'Github action for testing modern GTK-based applications'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
