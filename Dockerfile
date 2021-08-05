@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM fedora:33
 
 RUN dnf update -y && \
     dnf install -y git meson desktop-file-utils libappstream-glib gtk3-devel dbus-x11 xorg-x11-server-Xvfb && \
