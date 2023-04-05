@@ -13,12 +13,6 @@ RUN git clone https://github.com/ptomato/jasmine-gjs.git && \
     cd _build && \
     sudo ninja install
 
-RUN git clone --branch libhandy-1-6 --single-branch https://gitlab.gnome.org/GNOME/libhandy.git && \
-    cd libhandy && \
-    meson _build --prefix=/usr --datadir=share && \
-    cd _build && \
-    sudo ninja install
-
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
