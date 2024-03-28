@@ -1,4 +1,3 @@
 #!/bin/sh -l
 
-meson _test && cd _test && ninja
-xvfb-run --auto-servernum meson test --verbose
+xvfb-run --auto-servernum flatpak-builder --repo=repo --force-clean --install-deps-from=flathub --disable-rofiles-fuse build $MANIFEST_PATH
